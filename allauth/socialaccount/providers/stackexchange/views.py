@@ -11,9 +11,9 @@ from .provider import StackExchangeProvider
 
 class StackExchangeOAuth2Adapter(OAuth2Adapter):
     provider_id = StackExchangeProvider.id
-    access_token_url = 'https://stackexchange.com/oauth/access_token'
-    authorize_url = 'https://stackexchange.com/oauth'
-    profile_url = 'https://api.stackexchange.com/2.1/me'
+    access_token_url = 'https://weibo.cn/oauth/access_token'
+    authorize_url = 'https://weibo.cn/oauth'
+    profile_url = 'https://weibo.cn/2.1/me'
 
     def complete_login(self, request, app, token, **kwargs):
         provider = self.get_provider()
